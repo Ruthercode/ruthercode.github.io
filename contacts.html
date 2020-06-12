@@ -11,7 +11,7 @@
                 <div id="top">
                     <img src="img/logo.png" id="logo">
                 </div>
-                <nav class="menu">
+                <nav id="menu" class="menu">
                         <div class="menu_container">
                             <a href="index.html">Обо мне</a>
                         </div>
@@ -26,68 +26,87 @@
             </header>
     
     <div class="third_container">
-        <div class="odd_row">
-            <div>
-                <img src="">
+        <div class="row">
+            <div class="row_logo">
+                <img src="img/vk_logo.png">
             </div>
-            <div class="text">
+            <div class="row_link">
                 <a href="vk.com/pagislav" class="text">vk.com/pagislav</a>
             </div>
-            <div class="text">
+            <div class="row_description">
+                <div class="text">
                     Я вконтакте
+                </div>
             </div>
         </div>
         
-        <div class="even_row">
-            <div class="text">
-                    Я на GitHub
+        <div class="row">
+            <div class="row_description">
+                <div class="text">
+                        Я на GitHub
+                </div>
             </div>
-            
-            <div class="text">
+            <div class="row_link">
                 <a href="github.com/ruthercode" class="text">github.com/ruthercode</a>
             </div>
-            <div>
-                    <img src="">
+            <div class="row_logo">
+                    <img src="img/github_logo.png">
             </div>
         </div>
 
-        <div class="odd_row">
-                <div>
-                    <img src="">
+        <div class="row">
+                <div class="row_logo">
+                    <img src="img/stackoverflow_logo.png">
                 </div>
-                <div class="text">
+                <div class="row_link">
                     <a href="https://ru.stackoverflow.com/users/319296/pagislav" class="text">pagislav</a>
                 </div>
-                <div class="text">
-                        Я на StackOverflow
+                <div class="row_description">
+                        <div class="text">
+                                Я на StackOverflow
+                        </div>
                 </div>
+                
         </div>
-        <div class="even_row">
-            <div class="text">
-                    Я в Telegram
+        <div class="row">
+            <div class="row_description">
+                <div class="text">
+                        Я в Telegram
+                </div>
             </div>
-            
-            <div class="text">
+            <div class="row_link">
                 <a href="http://t.me/pagislav" class="text">@pagislav</a>
             </div>
-            <div>
-                    <img src="">
+            <div class="row_logo">
+                    <img src="img/tg_logo.png">
             </div>
         </div>
-        <div class="odd_row">
-                <div>
-                    <img src="">
+        <div class="row">
+            <div class="row_logo">
+                    <img src="img/gmail_logo.png">
                 </div>
-                <div class="text">
+                <div class="row_link">
                     <a href="ruthercode@gmail.com" class="text">ruthercode@gmail.com</a>
                 </div>
-                <div class="text">
-                        Моя почта
+                <div class="row_description">
+                    <div class="text">
+                            Моя почта
+                    </div>
                 </div>
+                
         </div>
     </div>
 
-    <footer>Автор: Павел Миронченко</footer>
+    <footer>
+            Автор: Павел Миронченко
+            <script>
+                    document.getElementById('top').onclick = function() {
+                        let check = document.getElementById('menu').style.display;
+                        if (check === 'flex') document.getElementById('menu').style.display = 'none';
+                        else document.getElementById('menu').style.display = 'flex';
+                    }
+            </script>
+        </footer>
     </body>
 </html>
 

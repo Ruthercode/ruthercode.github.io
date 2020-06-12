@@ -127,9 +127,50 @@ body {
     
 }
 
-.left_col {
-    
+.row {
+    align-items: center;
+    display: flex;
+    position: relative;
+    height: calc(100%/5);
+    width: 100%;
+    flex-direction: row;
 }
+
+div.row_logo {
+    height: calc((100%-79px)/5);
+    width: 18%;
+
+    background: #4F4F4F;
+}
+
+div.row_link {
+    position: relative;
+    height: calc((100%-79px)/5);
+    width: 32%;
+
+    font-size: 38px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #4F4F4F;
+}
+
+div.row_description {
+    height: calc((100%-79px)/5);
+    width: 50%;
+
+    font-size: 38px;
+    line-height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row_logo > img {width: 100%}
+
+
 #pic {
     position: relative;
     width: 100%;
