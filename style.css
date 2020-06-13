@@ -33,7 +33,7 @@ body {
 }
 
 .menu {
-    display: flex;
+    display: none;
     position: relative;
     background: #4F4F4F;
     
